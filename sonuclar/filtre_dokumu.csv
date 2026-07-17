@@ -1,0 +1,5 @@
+﻿Parti / Belge,ham_kelime,spacy_toplam_token,pos_filtresi_elenen,bos_noktalama_elenen,stopword_elenen,tek_karakter_elenen,islenmis_token
+AKP,155223,145928,53826,2229,7229,9267,73377
+CHP_IYI_Ortak,52535,51407,18006,1351,2024,119,29907
+DEM,12560,12161,4249,2,477,478,6955
+MHP,40291,39476,13752,189,2752,165,22618

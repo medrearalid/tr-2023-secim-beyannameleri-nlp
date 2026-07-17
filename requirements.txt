@@ -1,0 +1,35 @@
+# ============================================================================
+# Siyasi Parti Secim Beyannamesi Analizi - Bagimliliklar
+# ----------------------------------------------------------------------------
+# SURUMLER SABITLENMISTIR (tekrarlanabilirlik icin dondurulmus ortam).
+# Kayit tarihi: 2026-07-02. Calisma ortami: Python 3.11 (Windows 11).
+# Kanonik corpus (corpus_final_v1_YYYY-MM-DD.json) bu surumlerle uretilmistir;
+# surum degisikligi sayilari degistirebilir, degisiklikte corpus surumunu
+# artirin ve agents.md changelog kaydi ekleyin.
+#
+# Kurulum:
+#   pip install -r requirements.txt
+#
+# Turkce spaCy modeli ayri kurulur (resmi indirme uyumsuzluk verebilir):
+#   pip install https://huggingface.co/turkish-nlp-suite/tr_core_news_md/resolve/main/tr_core_news_md-1.0-py3-none-any.whl --no-deps
+# NOT: Model paketi calisma aninda kendini 3.4.2 olarak raporlar
+# (spacy.util.get_package_version). Bu surum bilgisi kanonik corpus
+# _meta bolumune otomatik yazilir.
+# ============================================================================
+
+# --- Modul 1: beyanname_analiz.py (Veri Isleme) ---
+spacy==3.8.14            # Tokenization, POS tagging, lemmatization
+PyMuPDF==1.27.2.3        # PDF metin cikarma (import adi: fitz)
+pandas==3.0.3            # DataFrame, CSV cikti
+scikit-learn==1.8.0      # TF-IDF, CountVectorizer (bigram), PCA, Cohen kappa
+
+# --- Modul 2: gorsellestirme.py (Gorsellestirme) ---
+matplotlib==3.10.9       # Grafik cizimi (Agg backend, headless)
+seaborn==0.13.2          # Istatistiksel gorsellestirme (barplot, stiller)
+numpy==2.4.4             # Sayisal islemler (oransal frekans, PCA dizileri)
+plotly==6.7.0            # Sankey diyagrami
+kaleido==1.3.0           # Plotly figurlerini statik PNG olarak kaydetme
+
+# Not: gorsellestirme.py icindeki teknoloji_duygu_analizi() fonksiyonu da
+# orijinal PDF dosyalarini okudugu icin PyMuPDF (fitz) gerektirir.
+# duygu_dogrulama.py, Cohen kappa icin scikit-learn kullanir.

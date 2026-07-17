@@ -1,0 +1,12 @@
+DUYGU SOZLUGU DOGRULAMA SONUCU
+==================================================
+Orneklem buyuklugu : 55
+Ham uyum orani     : 65.5%
+Cohen kappa        : 0.382
+
+Karisiklik tablosu (satir: elle kod, sutun: algoritma):
+Algoritma Kod  negatif  nötr  pozitif
+Elle Kod                             
+negatif              1     3        0
+nötr                 1    19        5
+pozitif              1     9       16
