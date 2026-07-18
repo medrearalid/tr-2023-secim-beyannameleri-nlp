@@ -1,7 +1,7 @@
 # 2023 Genel Seçimleri Parti Beyannamelerinde Yapay Zeka Söylemi
 
-Bu depo, "Türkiye'de Yapay Zeka ve Dijitalleşme Söyleminin İdeolojik Çerçevelenmesi:
-2023 Genel Seçimleri Parti Beyannameleri Üzerine Bir Metin Madenciliği Analizi" başlıklı
+Bu depo, "YAPAY ZEKÂ POLİTİKALARININ İDEOLOJİK İNŞASI:
+TÜRKİYE’DEKİ SİYASİ PARTİLERİN 2023 SEÇİM BEYANNAMELERİ ÜZERİNE HESAPLAMALI ANALİZ" başlıklı
 yüksek lisans tezimin analiz kodunu ve buna bağlı tüm ara/nihai çıktıları içerir. Tezin
 2.3 (Güvenirlik) bölümünde de belirtildiği gibi, bulguların denetlenebilir ve
 tekrarlanabilir olması için kullanılan tüm kodlar, sözlükler ve ön işleme çıktıları
